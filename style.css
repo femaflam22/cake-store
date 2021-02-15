@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+}
+
+header.d-sticky {
+    background: #fff;
+    padding: 5px 100px;
+}
+
+header img {
+    position: relative;
+    max-width: 70px;
+}
+
+header ul {
+    position: relative;
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+}
+
+header ul li a {
+    display: inline-block;
+    color: #333;
+    margin-left: 40px;
+    font-weight: 500;
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+header ul li a:hover {
+    color: #e12e56;
+}
+
+#home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    padding: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+}
+
+.content {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.content .textBox {
+    position: relative;
+    max-width: 700px;
+}
+
+.content .textBox h2 {
+    color: #333;
+    font-size: 2.8em;
+    line-height: 1.4em;
+    font-weight: 600;
+}
+
+.content .textBox h2 span {
+    color: #e12e56;
+    font-size: 1em;
+    font-weight: 900;
+}
+
+.content .textBox a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 5px 20px;
+    background-color: #e12e56;
+    color: #fff;
+    border-radius: 40px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.content .imgBox {
+    width: 600px;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 15px;
+    margin-top: 20px;
+}
+
+.content .imgBox img {
+    max-width: 500px;
+}
+
+.prevCakes {
+    position: absolute;
+    left: 50%;
+    bottom: 20px;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.prevCakes li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    cursor: pointer;
+}
+
+.prevCakes li:hover {
+    transform: translateY(-15px);
+}
+
+.prevCakes li img {
+    max-width: 70px;
+}
+
+.sosmed {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.sosmed li {
+    list-style: none;
+}
+
+.sosmed li a {
+    display: inline-block;
+    margin: 5px 0;
+    transform: scale(0.6);
+    filter: invert(5);
+}
+
+.sosmed li a img {
+    max-width: 35px;
+}
+
+.circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #fd585b;
+    clip-path: circle(650px at right 850px);
+}
+
+.listMenu {
+    padding: 40px;
+    padding-top: 100px;
+    background: #fd585b;
+}
+
+.listMenu .title {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.listMenu .title h2 {
+    font-weight: 600;
+    font-size: 2em;
+    padding-bottom: 10px;
+    color: #fff;
+}
+
+.listMenu .title h2 span {
+    color: #400809;
+}
+
+.listMenu .title p {
+    font-weight: 400;
+    color: #333;
+    color: #fff;
+}
+
+.listMenu .menus {
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.listMenu .menus .cardMenu {
+    width: 120px;
+    height: 150px;
+    margin: 14px;
+    background: #fff;
+    border: 10px solid #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.20);
+}
+
+.listMenu .menus .cardMenu .img {
+    position: relative;
+    width: 100%;
+    height: 90px;
+}
+
+.listMenu .menus .cardMenu .img:hover {
+    opacity: 1;
+}
+
+.listMenu .menus .cardMenu .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.listMenu .menus .cardMenu .text {
+    text-align: center;
+    padding-top: 8px;
+}
+
+.listMenu .menus .cardMenu .text h3 {
+    font-size: 0.8em;
+}
+
+#store {
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+
+.store {
+    width: 60%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    background: #fff;
+    box-shadow: 0 5px 25px rgba(0, 0, 0, 0.15);
+}
+
+.store .map {
+    width: 100%;
+    height: 18em;
+    margin-bottom: 30px;
+}
+
+.store .map iframe {
+    width: 100%;
+    height: 100%;
+}
+
+.store .store-img {
+    display: flex;
+    justify-content: start;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.store .store-img .imgCard {
+    position: relative;
+    width: 225px;
+    margin-right: 12px;
+}
+
+.store .store-img .imgCard img {
+    width: 100%;
+    height: 100%;
+}
+
+footer {
+    background: #8f8c8c;
+    height: auto;
+    width: 100%;
+    color: #fff;
+}
+
+footer .footer-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
+}
+
+footer .footer-content h3 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+}
+
+footer .footer-content p {
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+    margin: 10px auto;
+    line-height: 28px;
+    font-size: 13px;
+}
+
+footer .footer-content p .telp {
+    font-weight: 600;
+    text-decoration: underline;
+    font-size: 15px;
+}
+
+footer .footer-sosmed {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 3rem 0;
+}
+
+footer .footer-sosmed li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+footer .footer-sosmed a {
+    filter: invert(5);
+}
+
+footer .footer-sosmed a img {
+    max-width: 1.5rem;
+}
+
+footer .footer-sosmed a img:hover {
+    transform: translateY(-10px);
+}
+
+footer .footer-bottom {
+    background: #797575;
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer .footer-bottom p {
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+@media (max-width: 991px) {
+    header,
+    header.d-sticky {
+        padding: 20px;
+    }
+    header img {
+        max-width: 50px;
+    }
+    header ul {
+        display: none;
+    }
+    .menu {
+        position: relative;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background-image: url(/img/menuu.png);
+        background-size: 30px;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: 11;
+    }
+    .menu.active {
+        position: fixed;
+        right: 20px;
+        background-image: url(/img/close.png);
+        background-size: 20px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header ul.navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        z-index: 10;
+    }
+    header ul li a {
+        font-size: 1.3em;
+        margin: 5px 0;
+    }
+    #home {
+        padding: 60px 20px 120px;
+    }
+    .content {
+        flex-direction: column;
+        margin-top: 100px;
+    }
+    .content .textBox h2 {
+        font-size: 2em;
+        margin-bottom: 15px;
+    }
+    .content .textBox p {
+        font-size: 15px;
+    }
+    .content .textBox {
+        max-width: 100%;
+    }
+    .circle {
+        clip-path: circle(250px at center bottom);
+    }
+    .content .imgBox {
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 0;
+    }
+    .content .imgBox img {
+        max-width: 230px;
+    }
+    .prevCakes {
+        bottom: 5px;
+    }
+    .prevCakes li img {
+        max-width: 45px;
+    }
+    .sosmed {
+        right: 0;
+        width: 45px;
+        border-top-left-radius: 5px;
+        border-bottom-left-radius: 5px;
+        background: #eec2bd;
+        transform: translateY(-10px);
+    }
+    .listMenu .menus .cardMenu {
+        margin-bottom: 0;
+    }
+    .store .store-img .imgCard {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 887px) {
+    .store .store-img .imgCard {
+        width: 100%;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 373px) {
+    .sosmed {
+        width: 38px;
+        transform: translateY(-0);
+    }
+    .sosmed li a {
+        margin: 0;
+    }
+    .content .textBox h2 {
+        font-size: 1.8em;
+    }
+    .content .textBox p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 307px) {
+    .content .textBox h2 {
+        font-size: 1.5em;
+    }
+    .sosmed {
+        transform: translateY(-20px);
+    }
+    .listMenu .title h2 {
+        font-size: 1.5em;
+    }
+}

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fema's Cake</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="/img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo"><img src="/img/logo.png" alt="Fema's Cake"></a>
+        <div class="menu" onclick="toggleMenu()"></div>
+        <ul class="navigation">
+            <li><a href="#home" onclick="toggleMenu()">HOME</a></li>
+            <li><a href="#menu" onclick="toggleMenu()">MENU</a></li>
+            <li><a href="#store" onclick="toggleMenu()">STORE</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">CONTACT</a></li>
+        </ul>
+    </header>
+    <section id="home">
+        <div class="circle"> </div>
+        <div class="content">
+            <div class="textBox">
+                <h2>get a variety of your favorite cakes <br>only in <span>Fema's Cake</span></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo assumenda repudiandae a magnam, illum voluptas aperiam quis reiciendis ea, fugiat culpa laboriosam hic pariatur corporis?</p>
+                <a href="#">See More</a>
+            </div>
+            <div class="imgBox">
+                <img src="/img/c2.png" alt="Cake" class="cake">
+            </div>
+        </div>
+        <ul class="prevCakes">
+            <li><img src="/img/prev2.png" alt="Cake" onclick="imgSlider('/img/c2.png'); circleColor('#fd585b')" title="Macarons"></li>
+            <li><img src="/img/prev1.png" alt="Cake" onclick="imgSlider('/img/c1.png'); circleColor('#bb6414')" title="Pancakes"></li>
+            <li><img src="/img/prev4.png" alt="Cake" onclick="imgSlider('/img/c4.png'); circleColor('#d23c59')" title="Custom Cake"></li>
+        </ul>
+        <ul class="sosmed">
+            <li>
+                <a href="#"><img src="/img/telp.png" alt="telephone" title="012-567-980"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/img/ig.png" alt="instagram" title="@flmpt"></a>
+            </li>
+            <li>
+                <a href="#"><img src="/img/twit.png" alt="twitter" title="flmpt22"></a>
+            </li>
+        </ul>
+    </section>
+
+    <section id="menu" class="listMenu">
+        <div class="title">
+            <h2>Our <span>Menus</span></h2>
+            <p>choose your favorite menu</p>
+        </div>
+        <div class="menus">
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m1.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Pudding</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m2.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Pudding Cake</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m3.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Cookies</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m4.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Coffee Latte</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m5.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Chocolate Ice</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m6.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Birthday Cake</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m8.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Donuts</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m9.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Pie</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m11.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Picnic Set</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m12.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Custom Cake</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m13.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Juice with Wafer</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m14.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Custom Aesthetic Cake</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m15.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Biscuits with Mochi</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/m16.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Yogurt Strawbery</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/prev1.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Pancake</h3>
+                </div>
+            </div>
+
+            <div class="cardMenu">
+                <div class="img">
+                    <img src="/img/prev2.png" alt="menu">
+                </div>
+                <div class="text">
+                    <h3>Macarone</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="store">
+        <div class="store">
+            <div class="map">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15852.554125641731!2d106.81616122274752!3d-6.629710608994566!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69c8a99e8c3a95%3A0x8ad0670b6ead7c59!2sTajur%2C%20Kec.%20Bogor%20Tim.%2C%20Kota%20Bogor%2C%20Jawa%20Barat!5e0!3m2!1sid!2sid!4v1613372668113!5m2!1sid!2sid"
+                    width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+            <div class="store-img">
+                <div class="imgCard">
+                    <img src="/img/cafe.jpg" alt="Fema's Cafe">
+                </div>
+                <div class="imgCard">
+                    <img src="/img/cafe1.jpg" alt="Fema's Cafe">
+                </div>
+                <div class="imgCard">
+                    <img src="/img/cafe2.jpg" alt="Fema's Cafe">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-content">
+            <h3>Fema's Cake</h3>
+            <p>Pesan kue sesuai dengan menu yang tertera atau tambahan dengan dekorasi custom sesuai yang kamu inginkan. Hubungi di <span class="telp">012-567-980</span> (prioritas).</p>
+            <ul class="footer-sosmed">
+                <li>
+                    <a href="#"><img src="/img/telp.png" alt="telephone" title="012-567-980"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/img/ig.png" alt="instagram" title="@flmpt"></a>
+                </li>
+                <li>
+                    <a href="#"><img src="/img/twit.png" alt="twitter" title="flmpt22"></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyright &copy;2021 fema's Cake.</p>
+        </div>
+    </footer>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function() {
+            const header = document.querySelector('header');
+            header.classList.toggle('d-sticky', window.scrollY > 0);
+        })
+
+        function imgSlider(img) {
+            document.querySelector('.cake').src = img;
+        }
+
+        function circleColor(color) {
+            const circle = document.querySelector('.circle');
+            const sosmed = document.querySelector('.sosmed');
+            const bg = document.querySelector('.listMenu');
+            circle.style.background = color;
+            sosmed.style.background = color;
+            bg.style.background = color;
+        }
+
+        function toggleMenu() {
+            var menuToogle = document.querySelector('.menu');
+            var nav = document.querySelector('.navigation');
+            menuToogle.classList.toggle('active');
+            nav.classList.toggle('active');
+        }
+    </script>
+</body>
+
+</html>
